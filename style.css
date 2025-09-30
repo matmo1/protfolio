@@ -628,8 +628,15 @@ footer .socials img {
     }
     
     .author-img {
-        width: 120px;
-        height: 120px;
+        width: clamp(150px, 25vw, 180px);
+        height: clamp(150px, 25vw, 180px);
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center 30%; /* Adjust this value */
+        border: 5px solid #ff8c42;
+        box-shadow: 0 4px 24px rgba(255, 140, 66, 0.18);
+        transition: transform 0.4s;
+        flex-shrink: 0;
     }
     
     .intro p {
